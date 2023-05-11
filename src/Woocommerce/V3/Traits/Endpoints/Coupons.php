@@ -2,12 +2,17 @@
 
 namespace C14r\Woocommerce\V3\Traits\Endpoints;
 
+/**
+ * Trait Coupons
+ *
+ * Provides API requests related to coupons.
+ */
 trait Coupons
 {
     /**
-     * API-Request for coupons
-
-     * @return API
+     * Creates an API request for retrieving coupons.
+     *
+     * @return self The API instance.
      */
     public function coupons(): self
     {
@@ -15,10 +20,11 @@ trait Coupons
     }
 
     /**
-     * API-Request for coupons/:id
-
-     * @param int $id Unique identifier for the resource.
-     * @return API
+     * Creates an API request for retrieving a specific coupon.
+     *
+     * @param int $id The unique identifier for the coupon.
+     *
+     * @return self The API instance.
      */
     public function coupon(int $id): self
     {
@@ -26,9 +32,9 @@ trait Coupons
     }
 
     /**
-     * API-Request for coupons/batch
-
-     * @return API
+     * Creates an API request for performing batch operations on coupons.
+     *
+     * @return self The API instance.
      */
     public function couponBatch(): self
     {

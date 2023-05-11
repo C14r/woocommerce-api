@@ -7,7 +7,6 @@ namespace C14r\Woocommerce;
 use Automattic\WooCommerce\Client;
 use Automattic\WooCommerce\HttpClient\HttpClientException;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Cache;
 
 class Request
 {
