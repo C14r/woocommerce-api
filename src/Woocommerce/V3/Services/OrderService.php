@@ -2,7 +2,7 @@
 
 namespace C14r\Woocommerce\V3\Services;
 
-class ProductService extends Service
+class OrderService extends Service
 {
     /**
      * Retrieve an order with customer information.
