@@ -13,10 +13,25 @@ The recommended way to install WooCommerce-API is through
 composer require c14r/woocommerce-api
 ```
 
+## .env-File
+
+````env
+WOOCOMMERCE_URL=https://www.your-shop.com/
+WOOCOMMERCE_KEY=ck_???
+WOOCOMMERCE_SECRET=cs_???
+WOOCOMMERCE_VERSION=wc/v3
+````
+
+## Configuration
+
+If you want to change the default configuration or you want to use multiple connection you can publish the ``config/woocommerce.php`` by ``php artisan vendor:publish --tag=woocommerce-config`
+
 ## Table of Content
 
 - [WooCommerce API Wrapper for PHP](#woocommerce-api-wrapper-for-php)
   - [Installing](#installing)
+  - [.env-File](#env-file)
+  - [Configuration](#configuration)
   - [Table of Content](#table-of-content)
 - [ToDos](#todos)
   - [README.md](#readmemd)
@@ -25,7 +40,7 @@ composer require c14r/woocommerce-api
   - [Retrieving an instance](#retrieving-an-instance)
   - [Filtering](#filtering)
   - [Cacheing](#cacheing)
-  - [Configuration](#configuration)
+  - [Configuration](#configuration-1)
   - [Pagination](#pagination)
 - [Services Classes](#services-classes)
   - [ProductService](#productservice)

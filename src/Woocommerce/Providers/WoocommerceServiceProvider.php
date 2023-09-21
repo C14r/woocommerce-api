@@ -16,7 +16,7 @@ class WoocommerceServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/woocommerce.php' => config_path('woocommerce.php'),
-        ]);
+        ], 'woocommerce-config');
     }
 
     /**
