@@ -11,6 +11,7 @@ use C14r\Woocommerce\V3\Enums\CustomerRole;
 use C14r\Woocommerce\V3\Enums\OrderStatus;
 use C14r\Woocommerce\V3\Enums\Period;
 use C14r\Woocommerce\V3\Enums\ProductBackorders;
+use C14r\Woocommerce\V3\Enums\ProductStatus;
 use C14r\Woocommerce\V3\Enums\ProductType;
 use C14r\Woocommerce\V3\Enums\TaxClass;
 use C14r\Woocommerce\V3\Enums\TaxStatus;
@@ -709,7 +710,7 @@ trait QueryHelpers
         return $this->query('state', $value);
     }
 
-    public function status(OrderStatus $enum): self
+    public function status(OrderStatus|ProductStatus $enum): self
     {
         return $this->query('status', $enum->value);
     }
